@@ -7,12 +7,15 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "forever start dist/main.js",
+    "stop": "forever stop dist/main.js"
   },
   "dependencies": {
     "discord.js": "^13.6.0"
   },
   "devDependencies": {
+    "forever": "^4.0.3",
     "typescript": "^4.6.2"
   }
 }
