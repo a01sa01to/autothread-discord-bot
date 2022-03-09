@@ -1,5 +1,5 @@
 import { Client, Intents, TextChannel } from "discord.js"
-import { DISCORD_BOT_TOKEN } from "./config.json"
+import { DiscordBotToken, GuildId, ChannelId } from "./config.json"
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] })
 
@@ -7,12 +7,14 @@ client.once("ready", async () => {
   if (!client.user) console.warn("Client user is undefined")
   else {
     console.log(`Logged in as ${client.user.tag}`)
+
     client.user.setStatus("online")
     const link = client.generateInvite({
       scopes: ["bot"],
       permissions: ["CREATE_PUBLIC_THREADS"]
     })
     console.log(`Invite link: ${link}`);
+
     (await client.guilds.fetch()).forEach(async guild => {
       console.log(`${guild.name}: ${guild.id}`);
       (await guild.fetch()).channels.fetch().then(channels => {
@@ -26,7 +28,7 @@ client.once("ready", async () => {
 })
 
 client.on("messageCreate", async msg => {
-  console.log(JSON.stringify(msg));
+  if (msg.guildId !== GuildId || msg.channelId !== ChannelId) return;
   if (msg.channel.type === "GUILD_TEXT") {
     const _channel = await msg.channel.fetch();
     if (_channel.isText()) {
@@ -41,4 +43,4 @@ client.on("messageCreate", async msg => {
   }
 })
 
-client.login(DISCORD_BOT_TOKEN)
+client.login(DiscordBotToken)
