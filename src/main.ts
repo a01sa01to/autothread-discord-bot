@@ -32,7 +32,7 @@ client.on("messageCreate", async msg => {
     if (_channel.isText()) {
       const channel = _channel as TextChannel;
       await channel.threads.create({
-        name: `Thread - ${msg.content.slice(0, 5)}...`,
+        name: msg.content.split("\n")[0],
         type: "GUILD_PUBLIC_THREAD",
         startMessage: msg,
         autoArchiveDuration: "MAX"
