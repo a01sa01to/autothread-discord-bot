@@ -12,10 +12,12 @@
     "stop": "pm2 stop all"
   },
   "dependencies": {
-    "discord.js": "^13.8.1"
+    "discord.js": "^13.8.1",
+    "pm2": "^5.2.0"
   },
   "devDependencies": {
-    "pm2": "^5.2.0",
+    "@types/node": "^18.0.0",
     "typescript": "^4.7.4"
-  }
+  },
+  "packageManager": "yarn@3.2.1"
 }
