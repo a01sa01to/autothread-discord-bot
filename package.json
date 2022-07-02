@@ -12,10 +12,10 @@
     "stop": "pm2 stop all"
   },
   "dependencies": {
-    "discord.js": "^13.6.0"
+    "discord.js": "^13.8.1"
   },
   "devDependencies": {
     "pm2": "^5.2.0",
-    "typescript": "^4.6.2"
+    "typescript": "^4.7.4"
   }
 }
