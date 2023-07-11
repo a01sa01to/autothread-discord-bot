@@ -103,7 +103,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@opencensus/core", "npm:0.0.8"],\
             ["continuation-local-storage", "npm:3.2.1"],\
             ["log-driver", "npm:1.2.7"],\
-            ["semver", "npm:5.7.1"],\
+            ["semver", "npm:5.7.2"],\
             ["shimmer", "npm:1.2.1"],\
             ["uuid", "npm:3.4.0"]\
           ],\
@@ -115,7 +115,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@opencensus/core", "npm:0.0.9"],\
             ["continuation-local-storage", "npm:3.2.1"],\
             ["log-driver", "npm:1.2.7"],\
-            ["semver", "npm:5.7.1"],\
+            ["semver", "npm:5.7.2"],\
             ["shimmer", "npm:1.2.1"],\
             ["uuid", "npm:3.4.0"]\
           ],\
@@ -458,7 +458,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/async-listener-npm-0.6.10-841445d3ba-f64cb835ad.zip/node_modules/async-listener/",\
           "packageDependencies": [\
             ["async-listener", "npm:0.6.10"],\
-            ["semver", "npm:5.7.1"],\
+            ["semver", "npm:5.7.2"],\
             ["shimmer", "npm:1.2.1"]\
           ],\
           "linkType": "HARD"\
@@ -2398,10 +2398,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["semver", [\
-        ["npm:5.7.1", {\
-          "packageLocation": "./.yarn/cache/semver-npm-5.7.1-40bcea106b-57fd0acfd0.zip/node_modules/semver/",\
+        ["npm:5.7.2", {\
+          "packageLocation": "./.yarn/cache/semver-npm-5.7.2-938ee91eaa-fb4ab5e0dd.zip/node_modules/semver/",\
           "packageDependencies": [\
-            ["semver", "npm:5.7.1"]\
+            ["semver", "npm:5.7.2"]\
           ],\
           "linkType": "HARD"\
         }],\
