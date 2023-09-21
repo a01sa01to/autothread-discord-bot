@@ -2178,7 +2178,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["async", "npm:3.2.4"],\
             ["debug", "virtual:843926c797e04df48dda909e834ad39d686d9c1bee1e51f000bdf6d33c2d5a2575393aaa9436a0e873c787c543c556f0cfd02fb70cfb268a2424b00d6ade37f3#npm:4.3.4"],\
             ["pidusage", "npm:2.0.21"],\
-            ["systeminformation", "npm:5.11.22"],\
+            ["systeminformation", "npm:5.21.8"],\
             ["tx2", "npm:1.0.5"]\
           ],\
           "linkType": "HARD"\
@@ -2620,10 +2620,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["systeminformation", [\
-        ["npm:5.11.22", {\
-          "packageLocation": "./.yarn/unplugged/systeminformation-npm-5.11.22-784a0fc81e/node_modules/systeminformation/",\
+        ["npm:5.21.8", {\
+          "packageLocation": "./.yarn/unplugged/systeminformation-npm-5.21.8-9f288af6ae/node_modules/systeminformation/",\
           "packageDependencies": [\
-            ["systeminformation", "npm:5.11.22"]\
+            ["systeminformation", "npm:5.21.8"]\
           ],\
           "linkType": "HARD"\
         }]\
